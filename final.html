@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelX - Explore Your World</title>
+    <link rel="stylesheet" href="/Users/miles/Desktop/程式作品集/Javascript網頁/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrQkTyQmR6bKoKXK8J5Q15R2I5B1R1+NlVJQ7aL2tI51u5/tL0YXhB02+RcBr39a5q/0zyXoh5SnpYQd1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Custom CSS for two-column images */
+        .col-4 {
+            flex-basis: calc(50% - 20px); /* 50% width with margin */
+            margin-right: 20px;
+        }
+
+        @media (max-width: 800px) {
+            .col-4 {
+                flex-basis: 100%; /* Full width on smaller screens */
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="site-header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="https://infinitetravel.co.zw/wp-content/uploads/2021/06/infinite-travel-1.png" alt="TravelX" width="120px" /></a>
+                </div>
+                <nav>
+                    <ul id="menuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#tours">Tours</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <a href="#" class="btn">Book Now</a>
+                <i class="fas fa-globe menu-icon" onclick="menutoggle()"></i>
+            </div>
+            <div class="row">
+                <div class="text-center">
+                    <h1>Explore the World<br />With Travel Infinite</h1>
+                    <div class="text-center">
+                        <p>Discover amazing destinations and unique experiences around the globe. Start your adventure today!</p>
+                    </div>
+                    <a href="#" class="btn">Explore Now →</a>
+                </div>
+                <div class="col-2">
+                    <img src="https://images.hindustantimes.com/img/2023/01/10/550x309/While-the-past-year-was-about-revenge-and-revival-_1673351689949.jpg" alt="TravelX Destinations" />
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="destinations">
+        <div class="small-container">
+            <h2 class="section-title">Featured Destinations</h2>
+            <div class="row">
+                <div class="col-4">
+                    <a href="#"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/15/6d/d6/paris.jpg?w=2400&h=1000&s=1" alt="Destination 1" /></a>
+                    <h4>Paris, France</h4>
+                    <p>Explore the romantic streets of Paris, visit the Eiffel Tower, and indulge in exquisite French cuisine.</p>
+                </div>
+                <div class="col-4">
+                    <a href="#"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/33/f3/ad/caption.jpg?w=1400&h=-1&s=1" alt="Destination 2" /></a>
+                    <h4>Santorini, Greece</h4>
+                    <p>Experience breathtaking sunsets, white-washed buildings, and crystal-clear waters in Santorini.</p>
+                </div>
+                <div class="col-4">
+                    <a href="#"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/b9/ed/e6/caption.jpg?w=1400&h=-1&s=1" alt="Destination 3" /></a>
+                    <h4>Bali, Indonesia</h4>
+                    <p>Discover serene beaches, lush rice terraces, and vibrant culture in the tropical paradise of Bali.</p>
+                </div>
+                <div class="col-4">
+                    <a href="#"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/25/14/2c/e7/caption.jpg?w=1400&h=-1&s=1" alt="Destination 4" /></a>
+                    <h4>New York City, USA</h4>
+                    <p>Explore the bustling streets of NYC, visit iconic landmarks, and experience the vibrant city life.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tours Section -->
+    <section id="tours" class="tours">
+        <div class="small-container">
+            <h2 class="section-title">Popular Tours</h2>
+            <div class="row">
+                <div class="col-4">
+                    <a href="#"><img src="https://assets.vogue.com/photos/5d8a78d136789600094a4b4c/master/w_2560%2Cc_limit/00-story-european-beach-towns-october.jpg" alt="Tour 1" /></a>
+                    <h4>European Adventure</h4>
+                    <p>Explore Europe's most iconic cities and landmarks in this unforgettable journey across the continent.</p>
+                </div>
+                <div class="col-4">
+                    <a href="#"><img src="https://www.gap360.com/tpl/lib/img/private/media/temple-gate.jpeg" alt="Tour 2" /></a>
+                    <h4>Asian Discovery</h4>
+                    <p>Embark on a cultural immersion through Asia's diverse landscapes, ancient temples, and bustling markets.</p>
+                </div>
+                <div class="col-4">
+                    <a href="#"><img src="https://images.homhero.com.au/1920x0/0d4feb57-95f3-4a56-a0fc-b65fc3a24bac/listing/29/3929533d-4102-151c-5f01-0f6934ff5097.jpg" alt="Tour 3" /></a>
+                    <h4>Tropical Escape</h4>
+                    <p>Relax and unwind in paradisiacal islands, snorkel in crystal-clear waters, and enjoy tropical cocktails.</p>
+                </div>
+                <div class="col-4">
+                    <a href="#"><img src="https://burst.shopifycdn.com/photos/chicago-city-lights-at-night.jpg?width=1000&format=pjpg&exif=0&iptc=0" alt="Tour 4" /></a>
+                    <h4>City Explorer</h4>
+                    <p>Discover vibrant cities, immerse yourself in local culture, and savor delicious regional cuisines.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
